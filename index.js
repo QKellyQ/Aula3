@@ -144,7 +144,7 @@ function cadastrarfuncionario(req, resp){
 //Validar a entrada do Usuario
 //caso os dados não estiverem validos nos deveremos retornar um feedback
 
-    if(nome!== undefined || nome!== "" && Empresa !== undefined || Empresa!=="" && email!== undefined || email!=="" && endereco!== undefined || endereco!== "" && cidade!== undefined || cidade!== "" && estado!== undefined || estado!=="" && cep!== undefined || cep!=="" && numero!== undefined || numero!==""){
+    if(nome&& Empresa&& email&& endereco&& cidade&& estado && cep&& numero){
         
         const funcionario = {nome,Empresa,email,endereco,cidade,estado,cep,numero};
 
